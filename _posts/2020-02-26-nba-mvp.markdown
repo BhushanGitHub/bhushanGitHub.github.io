@@ -1,0 +1,25 @@
+---
+title: ":basketball: NBA MVP Prediction"
+layout: post
+date: 2020-02-26 09:11
+tag: 
+- predictive analytics
+- R
+headerImage: true
+projects: true
+hidden: true # don't count this post in blog pagination
+description: " - Can the NBA MVP be predicted based on no specified criteria from the league?"
+category: projects
+author: bhushans
+externalLink: false
+---
+
+![Screenshot](/assets/images/mvp.jpg)
+
+## NBA MVP Prediction  
+<p align="justify">The National Basketball Association (NBA) is a professional basketball league in North America comprising 30 franchises, of which 29 are in the United States and Canada. The league has grown from its humble beginnings to a global enterprise generating over $8 billion in annual revenue. A significant component of the rise in popularity of the sport can be attributed to the aggressive player-centric marketing initiative. Fans often discuss and debate the accolades of specific players with greater passion than they do for the franchises they represent.</p>
+
+<p align="justify">The league does a tremendous job of staying ahead of the curve in advanced analytics. Still, when deciding the most valuable player (MVP), they leave everything to 100 NBA selected media members' opinions. Additionally, the league does not provide any criteria for selecting or voting. Without a defined criterion, the argument for MVP is debated year after year. The purpose of this project is to see if there is an unwritten criterion being followed, and once determined, can it be used to predict future MVPs.</p>  
+  
+GitHub repository can be found here: [GitHub](https://github.com/BhushanGitHub/NBA_MVP_Prediction)  
+The final report can be found here: [Final Results/Report](https://github.com/BhushanGitHub/NBA_MVP_Prediction/tree/main/Report)

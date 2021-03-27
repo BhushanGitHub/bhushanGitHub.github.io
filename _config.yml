@@ -34,24 +34,24 @@ disqus:
   categories: [] # only show disqus for posts that have these categories
 
 # if you don't have any of social below, comment the line
-#facebook: myfacebook
-#twitter: mytwitter
-# instagram: myinstagram
-# pinterest: mypinterest
-linkedin: bhushans/
-# youtube: myyoutube
-# spotify: myspotify
-github: bhushans
-# gitlab: mygitlab
-# lastfm: mylastfm
-# stackoverflow: 7044681/mystackoverflow
-# quora: userquora
-# reddit: username
-medium: .medium.com
-# vimeo: myvimeo
-# lanyrd: mylanyrd
-email: bhushans@gmail.com
-datacamp: bhushans
+#facebook:
+#twitter:
+# instagram:
+# pinterest:
+linkedin: bhushan-suryawanshi-33853210
+# youtube:
+# spotify:
+github: BhushanGitHub
+# gitlab:
+# lastfm:
+# stackoverflow:
+# quora:
+# reddit:
+# medium: .medium.com
+# vimeo:
+# lanyrd:
+email: bhushan.suryawanshi@gmail.com
+#datacamp: bhushans
 
 authors:
   bhushans:

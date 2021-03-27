@@ -57,4 +57,4 @@ dd {
 	<li>Devoted Continuous Learning</li>
 </ul>
 
-<h2><a href="mailto:bhushan.suryawanshi@gmail.com">Email Me!</a></h2>
+<h2><a href="mailto:bhushan.bhushanfordatascience@gmail.com">Email Me!</a></h2>

@@ -12,9 +12,9 @@ picture: assets/images/headshot.png
 
 # If you want to include your resume, set to true
 # and specify source (external or local).
-resume: true
-resume-external: false
-resume-url: assets/BhushanSuryawanshi_DataEngineer.pdf
+#resume: true
+#resume-external: false
+#resume-url: assets/BhushanSuryawanshi_DataEngineer.pdf
 
 url: https://bhushangithub.github.io
 # your url: https://USERNAME.github.io
@@ -79,6 +79,8 @@ projects: true
 # if you don't need "about" or "blog", comment them out below
 about: true
 #blog: true
+
+work: true
 
 # do you want to show the "read time" of the posts?
 read-time: true

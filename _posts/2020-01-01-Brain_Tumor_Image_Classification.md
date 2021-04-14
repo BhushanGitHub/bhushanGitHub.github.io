@@ -1,5 +1,5 @@
 ---
-title: ":brain: Brain Tumor Image Classification"
+title: "Brain Tumor Image Classification"
 layout: post
 tag: 
 - Data Preperation 

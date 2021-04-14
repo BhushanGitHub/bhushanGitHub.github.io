@@ -1,5 +1,5 @@
 ---
-title: "Airline Safety Visualization"
+title: ![Screenshot](/assets/images/aviation_safety.jpg) "Airline Safety Visualization"
 layout: post
 tag: 
 - Data Preperation 

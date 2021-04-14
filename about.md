@@ -21,8 +21,6 @@ dd {
 	<dd><i>Coursework included: Applied Statistics, Data Exploration and Analysis, Data Preparation, Data Mining, Predictive Analytics, Data Presentation and Visualization, and Big Data</i></dd></li>
 </ul>
 
-<h2>Certifications</h2>
-
 <ul>
 	
 </ul>
@@ -43,7 +41,8 @@ dd {
 	<li>Data Visualization: Matplotlib, Seaborn, Tableau, Plotly, Folium, ggplot2</li>
 	<li>ML Frameworks: Scikit-Learn, TensorFlow, Keras, PyTorch</li>
 	<li>Tools: GitHub, PyCharm, Jupyter Notebook, MS Office Suite</li>
-	<li>Big Data Technologies (limited): Hadoop, Spark, PySpark</li>
+	<li>Big Data Technologies: Hadoop, Hive, Spark, PySpark</li>
+	<li>Cloud Technologies: AWS, S3, SQS, Lambda, IAM-roles</li>
 </ul>
 
 <h2>Business Skills</h2>
@@ -52,9 +51,8 @@ dd {
 	<li>Effective Communication and Deadline Management</li>
 	<li>Leadership and Stakeholder Management</li>
 	<li>Project Management and Oversight</li>
-	<li>Talent Acquisition Background - Technical and Executive</li>
-	<li>Creative and Perceptive Problem Solver </li>
+	<li>Talent Acquisition Background - Technical</li>
 	<li>Devoted Continuous Learning</li>
 </ul>
 
-<h2><a href="mailto:bhushan.bhushanfordatascience@gmail.com">Email Me!</a></h2>
+<h2><a href="mailto:bhushanfordatascience@gmail.com">Email Me!</a></h2>

@@ -15,3 +15,6 @@ category: projects
 author: Bhushan Suryawanshi 
 externalLink: false
 ---
+
+
+![Screenshot](/assets/images/stock.jpg)

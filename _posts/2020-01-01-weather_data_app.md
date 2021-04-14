@@ -15,6 +15,8 @@ author: Bhushan Suryawanshi
 externalLink: false
 ---
 
+![Screenshot](/assets/images/weather.jpg)
+
 ## Weather Data App
 <p align='justify'>
 The program will get current weather data for the City.

@@ -14,3 +14,5 @@ category: projects
 author: Bhushan Suryawanshi 
 externalLink: false
 ---
+
+![Screenshot](/assets/images/IPL.jpg)

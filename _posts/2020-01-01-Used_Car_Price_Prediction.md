@@ -1,5 +1,5 @@
 ---
-title: "Used Car Price Prediction"
+title: ":car: Used Car Price Prediction"
 layout: post
 tag: 
 - Data Preperation 

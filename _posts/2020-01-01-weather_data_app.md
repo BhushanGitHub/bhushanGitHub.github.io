@@ -15,7 +15,10 @@ author: Bhushan Suryawanshi
 externalLink: false
 ---
 
-![Screenshot](/assets/images/weather.jpg)
+<p align="center">
+  <img width="460" height="300" src="/assets/images/weather.jpg">
+</p>
+
 
 ## Weather Data App
 <p align='justify'>

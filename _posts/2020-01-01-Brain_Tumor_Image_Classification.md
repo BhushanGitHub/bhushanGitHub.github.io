@@ -20,4 +20,3 @@ externalLink: false
   <img width="460" height="300" src="/assets/images/brain_tumor.jpg">
 </p>
 
-![Screenshot](/assets/images/brain_tumor.jpg)

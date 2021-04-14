@@ -16,5 +16,7 @@ author: Bhushan Suryawanshi
 externalLink: false
 ---
 
+<p align="center">
+  <img width="460" height="300" src="/assets/images/stock.jpg">
+</p>
 
-![Screenshot](/assets/images/stock.jpg)

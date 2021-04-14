@@ -16,4 +16,6 @@ author: Bhushan Suryawanshi
 externalLink: false
 ---
 
-![Screenshot](/assets/images/suicide.jpg)
+<p align="center">
+  <img width="460" height="300" src="/assets/images/suicide.jpg">
+</p>

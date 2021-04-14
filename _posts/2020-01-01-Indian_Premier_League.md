@@ -15,4 +15,6 @@ author: Bhushan Suryawanshi
 externalLink: false
 ---
 
-![Screenshot](/assets/images/IPL.jpg)
+<p align="center">
+  <img width="460" height="300" src="/assets/images/IPL.jpg">
+</p>

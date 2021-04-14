@@ -16,7 +16,10 @@ author: Bhushan Suryawanshi
 externalLink: false
 ---
 
-![Screenshot](/assets/images/aviation_safety.jpg)
+<p align="center">
+  <img width="460" height="300" src="/assets/images/aviation_safety.jpg">
+</p>
+
 
 ## Airline Safety Visualization 
 <p align='justify'>Due to recent unfortunate airline crashes, the media has been promoting statistics stating air is no longer a safe way to travel. 

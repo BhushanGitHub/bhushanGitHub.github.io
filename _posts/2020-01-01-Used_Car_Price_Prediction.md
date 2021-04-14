@@ -16,7 +16,9 @@ author: Bhushan Suryawanshi
 externalLink: false
 ---
 
-![Screenshot](/assets/images/car_price.jpeg)
+<p align="center">
+  <img width="460" height="300" src="/assets/images/car_price.jpeg">
+</p>
 
 
 ## Used Car Price Prediction

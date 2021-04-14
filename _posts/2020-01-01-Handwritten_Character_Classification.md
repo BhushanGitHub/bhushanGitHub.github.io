@@ -16,4 +16,7 @@ author: Bhushan Suryawanshi
 externalLink: false
 ---
 
-![Screenshot](/assets/images/devnagari.png)
+<p align="center">
+  <img width="460" height="300" src="/assets/images/devnagari.png">
+</p>
+

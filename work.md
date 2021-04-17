@@ -1,10 +1,32 @@
 ---
-title: Work
+title: About
 layout: page
 ---
 ![Profile Image]({% if site.external-image %}{{ site.picture }}{% else %}{{ site.url }}/{{ site.picture }}{% endif %})
 
-<p align="justify">Hello, my name is Bhushan, and I recently completed my Master of Science in Data Science from Bellevue University.</p>
+<p align="justify">Hello, my name is Bhushan, and I recently completed my Master of Science in Data Science from Bellevue University.
+
+An agilest with 14years of industry experience.
+
+Presently working with Zillow Group as a Data Engineer for Travel and Logistics business unit.
+
+Experience in Pre-sales—Ability to provide and review technical and business solutions consisting of multiple technologies and domains
+
+Have the ability to analyze and execute different tasks with different teams and possess the strength to perform under critical conditions
+
+Excellent Customer facing and consulting skills. Ability to understand business pain points of Industry or customers and to translate business pain points to solutions
+
+Excellent interpersonal and problem solving skills with the ability to work in multi-cultural environments.
+
+Worked in cross-functional areas like Delivery, Operations, Pre Sales, and Change Management.
+
+Proven ability to take the role of client relationship / consulting skills such as the ability to work with the business partners to translate business requirements into technical solutions that meet or exceed those business needs.
+
+Good team player with leadership skills and skills for coordinating cross-functional departments, to achieve defined business objectives.
+
+Keen communicator with excellent relationship management, analytical, logical, problem-solving abilities. 
+
+</p>
 
 <style>
 dd { 

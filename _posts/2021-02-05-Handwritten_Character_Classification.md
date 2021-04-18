@@ -54,13 +54,13 @@ The dataset is split into training set(85%) and testing set(15%).
 
 
 #### Prerequisites/Installations:
-Python 3
-Pandas
-Numpy
-sklearn
-keras
-TensorFlow
-Anaconda
+- Python 3
+- Pandas
+- Numpy
+- sklearn
+- keras
+- TensorFlow
+- Anaconda
 
 
 GitHub repository can be found here: [GitHub]( https://github.com)  

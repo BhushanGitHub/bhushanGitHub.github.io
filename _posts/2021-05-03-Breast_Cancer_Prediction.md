@@ -1,11 +1,10 @@
 ---
-title: "USA Suicide Rate Analysis"
+title: "Breast Cancer Prediction"
 layout: post
 tag: 
-- Data Analysis 
-- python
-- Data Preperation
-- EDA
+- Python
+- Regression
+- Model Comparison 
 
 headerImage: true
 projects: true
@@ -17,5 +16,5 @@ externalLink: false
 ---
 
 <p align="center">
-  <img width="460" height="300" src="/assets/images/suicide.png">
+  <img width="460" height="300" src="/assets/images/IPL.jpg">
 </p>

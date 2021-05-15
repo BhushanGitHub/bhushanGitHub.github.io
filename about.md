@@ -12,68 +12,67 @@ the ability to communicate with team members and clients while effectively meeti
 
 As a Data Engineer, I collaborated with BigData, product, and management teams around the world including onshore and offshore collaboration.
 
-Worked throughout the entire project life cycle, having hands on technical expertise in Java, Python, J2EE, Bigdata Technologies and IBM mainframe technologies. 
+Following are highlights of my work experience -
 
-Experience working on large, complex software development and enterprise projects integrating various technologies.
+- Worked throughout the entire project life cycle, having hands on technical expertise in Java, Python, J2EE, Bigdata Technologies and IBM mainframe technologies. 
 
-Specialized in development and implementation of Web based, Internet/Intranet, client/server, and distributed architecture applications using Java/J2EE technologies.
+- Experience working on large, complex software development and enterprise projects integrating various technologies.
 
-Experience with continuous integration using Jenkins. 
+- Specialized in development and implementation of Web based, Internet/Intranet, client/server, and distributed architecture applications using Java/J2EE technologies.
 
-Extensively worked on Restful web services using JSON contracts and XML related technologies like JAXB, XSD and XML Schemas.
+- Experience with continuous integration using Jenkins. 
 
-Extensive experience in full SDLC and methodologies like Agile, SCRUM and Test Driven Development.
+- Extensively worked on Restful web services using JSON contracts and XML related technologies like JAXB, XSD and XML Schemas.
 
-Analyze existing architecture and propose new architecture keeping TOGAF Architecture Development Method (ADM) process in mind. 
+- Extensive experience in full SDLC and methodologies like Agile, SCRUM and Test Driven Development.
 
-Certified Scrum Master by Scrum Alliance.
+- Analyze existing architecture and propose new architecture keeping TOGAF Architecture Development Method (ADM) process in mind. 
 
-Have hands on experience in BigData technologies like Hive, Web HDFS,  HUE, Sqoop.
+- Certified Scrum Master by Scrum Alliance.
 
-Created data dashboards using data from different data sources like ElasticSearch, Oracle DB etc.  
+- Have hands on experience in BigData technologies like Hive, Web HDFS,  HUE, Sqoop.
 
-Understanding of AWS cloud platform, data analytics and machine learning. 
+- Created data dashboards using data from different data sources like ElasticSearch, Oracle DB etc.  
 
-Contributed on-site/distributed development teams and ensured all development team project milestones and deadlines are met.
+- Understanding of AWS cloud platform, data analytics and machine learning. 
 
-Excellent Customer facing and consulting skills. Ability to understand business needs and to translate to executable software design, project plan under specified budget.
+- Contributed on-site/distributed development teams and ensured all development team project milestones and deadlines are met.
 
-Worked in cross-functional areas like Delivery, Operations, Pre Sales, and Change Management.
+- Excellent Customer facing and consulting skills. Ability to understand business needs and to translate to executable software design, project plan under specified budget.
 
-Extensively worked in interfacing highly scalable dashboard Applications with Legacy systems.
+- Worked in cross-functional areas like Delivery, Operations, Pre Sales, and Change Management.
 
-Extensively implemented J2EE design patterns such as Factory Pattern, Singleton, DAO, DTO etc and best practices for building enterprise systems.
+- Extensively worked in interfacing highly scalable dashboard Applications with Legacy systems.
 
-Skilled at writing DB2,SQL, Stored procedures, Functions & Triggers. 
+- Extensively implemented J2EE design patterns such as Factory Pattern, Singleton, DAO, DTO etc and best practices for building enterprise systems.
 
-Well versed with IDE’s such as Eclipse, InteliJ.
+- Skilled at writing DB2,SQL, Stored procedures, Functions & Triggers. 
 
-Experienced in deploying J2EE applications on Apache Tomcat web server and Web Logic, Web Sphere, JBoss application server. 
+- Well versed with IDE’s such as Eclipse, InteliJ.
 
-Experience in deploying applications on UNIX environments. 
+- Experienced in deploying J2EE applications on Apache Tomcat web server and Web Logic, Web Sphere, JBoss application server. 
 
-Experience in writing JUnit test cases for system testing, Used Log4j for logging.
+- Experience in deploying applications on UNIX environments. 
 
-Excellent work experience with Version Control Tool’s such as Subversion(SVN) or GIT. 
+- Experience in writing JUnit test cases for system testing, Used Log4j for logging.
 
-Bug tracking tools likes HPQC-ALM, JIRA.
+- Excellent work experience with Version Control Tool’s such as Subversion(SVN) or GIT. 
 
-Developed Self-Service, Enterprise dashboard transportation and logistics vertical.
+- Bug tracking tools likes HPQC-ALM, JIRA.
 
-Worked with Maven for application building, scheduling, mailing, and automation.
+- Developed Self-Service, Enterprise dashboard transportation and logistics vertical.
 
-Worked on CICD and Dockerization.
+- Worked with Maven for application building, scheduling, mailing, and automation.
 
-Worked on Agile Development Methodology. 
+- Worked on CICD and Dockerization.
 
-Experienced in Full SDLC life Cycle such as Analysis, Design, Implementation, Testing, Enhancement, Production Support and Change Management of business critical applications.
+- Worked on Agile Development Methodology. 
+
+- Experienced in Full SDLC life Cycle such as Analysis, Design, Implementation, Testing, Enhancement, Production Support and Change Management of business critical applications.
 
 
 I am currently working in the USA. I am always available to discuss your project and I am just an email away. 
 These days I enjoy spending my free time talking a trail walk, cooking different food, and playing with my kids.
-
-
-
 
 </p>
 

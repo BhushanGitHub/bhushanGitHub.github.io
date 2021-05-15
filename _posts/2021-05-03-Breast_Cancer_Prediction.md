@@ -32,8 +32,11 @@ making an accurate predictive diagnosis relating to breast cancer.
 #### DataSets:
 
 Breast cancer testing has a process called Fine Needle Aspirate (FNA). This process uses breast mass collected using a hollow needle attached to a syringe to get a small amount of tissue. Which is used to run laboratory tests. The data is collected from these tests and made available for machine learning. This database is available through - 
+
 UCI Machine Learning Repository: https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+%28Diagnostic%29
+
 Kaggle - https://www.kaggle.com/uciml/breast-cancer-wisconsin-data.
+
 Attribute Information:
 
 1) ID number
@@ -63,8 +66,6 @@ i) symmetry
 j) fractal dimension ("coastline approximation" - 1)
 
 The dataset also provides the mean, standard error, and "worst" or largest (mean of the three largest values) of these features for each image, resulting in 30 features. 
-
-Dataset Can be found [here](https://www.kaggle.com/uciml/breast-cancer-wisconsin-data)
 
 
 #### Prerequisites/Installations:

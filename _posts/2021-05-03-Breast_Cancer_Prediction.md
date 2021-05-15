@@ -43,14 +43,18 @@ breast cancer diagnosis.
 Exploring the data has led to some basic and interesting discoveries. The data consists of 569 records, with 212 as 
 malignant and 357 diagnosed as benign, 37.26% and 62.74% respectively.  
 
+
 <img width="460" height="300" src="/assets/images/Bar%20Graph.jpg">
 
 
 With the pair plot, we are able to visualize initial patterns of how the features and diagnosis relate to one another. 
 
+
 <img width="460" height="300" src="/assets/images/original%20data%20correlation.png">
 
+
 The following graph shows the distribution of data after log transformation. 
+
 
 <img width="460" height="300" src="/assets/images/log_histogram.png">
 
@@ -63,6 +67,7 @@ The dataset was randomly split into 80% training and 20% testing data sets. Sinc
 
 Results: The results from each model are shared below. 
 
+
 <img width="460" height="300" src="/assets/images/BreastCancerResults.jpg">
 
 </p>  
@@ -73,21 +78,34 @@ Breast cancer testing has a process called Fine Needle Aspirate (FNA). This proc
 UCI Machine Learning Repository: https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+%28Diagnostic%29
 Kaggle - https://www.kaggle.com/uciml/breast-cancer-wisconsin-data.
 Attribute Information:
-1) ID number
-2) Diagnosis (M = malignant, B = benign)
-3 to 32) Ten real-valued features are computed for each cell nucleus:
-a) radius (mean of distances from center to points on the perimeter)
-b) texture (standard deviation of gray-scale values)
-c) perimeter
-d) area
-e) smoothness (local variation in radius lengths)
-f) compactness (perimeter^2 / area - 1.0)
-g) concavity (severity of concave portions of the contour)
-h) concave points (number of concave portions of the contour)
-i) symmetry
-j) fractal dimension ("coastline approximation" - 1)
-The dataset also provides the mean, standard error, and "worst" or largest (mean of the three largest values) of these features for each image, resulting in 30 features. 
 
+1) ID number
+
+2) Diagnosis (M = malignant, B = benign)
+
+3 to 32) Ten real-valued features are computed for each cell nucleus:
+
+a) radius (mean of distances from center to points on the perimeter)
+
+b) texture (standard deviation of gray-scale values)
+
+c) perimeter
+
+d) area
+
+e) smoothness (local variation in radius lengths)
+
+f) compactness (perimeter^2 / area - 1.0)
+
+g) concavity (severity of concave portions of the contour)
+
+h) concave points (number of concave portions of the contour)
+
+i) symmetry
+
+j) fractal dimension ("coastline approximation" - 1)
+
+The dataset also provides the mean, standard error, and "worst" or largest (mean of the three largest values) of these features for each image, resulting in 30 features. 
 
 Dataset Can be found [here](https://www.kaggle.com/uciml/breast-cancer-wisconsin-data)
 

@@ -39,26 +39,32 @@ and evaluated using the testing data. Models have been evaluated in Python and R
 predict a correct diagnosis of a cancerous tumor over 90% of the time. These results are very exciting and help in 
 breast cancer diagnosis. 
 
-
 Exploring the data has led to some basic and interesting discoveries. The data consists of 569 records, with 212 as 
 malignant and 357 diagnosed as benign, 37.26% and 62.74% respectively.  
+
+</p>
 
 
 <img width="460" height="300" src="/assets/images/Bar%20Graph.jpg">
 
 
+<p align='justify'>
 With the pair plot, we are able to visualize initial patterns of how the features and diagnosis relate to one another. 
+</p>
 
 
 <img width="460" height="300" src="/assets/images/original%20data%20correlation.png">
 
 
+<p align='justify'>
 The following graph shows the distribution of data after log transformation. 
+</p>
 
 
 <img width="460" height="300" src="/assets/images/log_histogram.png">
 
 
+<p align='justify'>
 Feature selection was the most important and challenging portion of the analysis. With the data set being relatively 
 small, 529 records, and many of the features having high correlations, it was vital to identify the most important 
 features, but also not to eliminate those with minor significance.
@@ -66,11 +72,11 @@ features, but also not to eliminate those with minor significance.
 The dataset was randomly split into 80% training and 20% testing data sets. Since this is a classification prediction problem, the following models were selected for evaluation: Random Forest Classifier, Logistic Regression CV, K-Nearest Neighbor Classifier, and Support Vector Machines (SVM) with Support Vector Classifier. For metrics visualization, a simple function was created that can be used with each model. Each model was fit and tuned using the training data set, and a prediction was made and evaluated using the training data. Models were evaluated in both Python and R.
 
 Results: The results from each model are shared below. 
+</p>
 
 
 <img width="460" height="300" src="/assets/images/BreastCancerResults.jpg">
-
-</p>  
+  
 
 #### DataSets:
 

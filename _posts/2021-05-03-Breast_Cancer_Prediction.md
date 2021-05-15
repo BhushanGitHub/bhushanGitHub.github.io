@@ -28,6 +28,54 @@ early, studies show that these statistics can be improved. The purpose of this p
 determine if machines can accurately assist doctors, particularly breast cancer specialists, in 
 making an accurate predictive diagnosis relating to breast cancer. 
 
+
+#### DataSets:
+
+Breast cancer testing has a process called Fine Needle Aspirate (FNA). This process uses breast mass collected using a hollow needle attached to a syringe to get a small amount of tissue. Which is used to run laboratory tests. The data is collected from these tests and made available for machine learning. This database is available through - 
+UCI Machine Learning Repository: https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+%28Diagnostic%29
+Kaggle - https://www.kaggle.com/uciml/breast-cancer-wisconsin-data.
+Attribute Information:
+
+1) ID number
+
+2) Diagnosis (M = malignant, B = benign)
+
+3 to 32) Ten real-valued features are computed for each cell nucleus:
+
+a) radius (mean of distances from center to points on the perimeter)
+
+b) texture (standard deviation of gray-scale values)
+
+c) perimeter
+
+d) area
+
+e) smoothness (local variation in radius lengths)
+
+f) compactness (perimeter^2 / area - 1.0)
+
+g) concavity (severity of concave portions of the contour)
+
+h) concave points (number of concave portions of the contour)
+
+i) symmetry
+
+j) fractal dimension ("coastline approximation" - 1)
+
+The dataset also provides the mean, standard error, and "worst" or largest (mean of the three largest values) of these features for each image, resulting in 30 features. 
+
+Dataset Can be found [here](https://www.kaggle.com/uciml/breast-cancer-wisconsin-data)
+
+
+#### Prerequisites/Installations:
+- Python 3
+- Pandas
+- Keras
+- TensorFlow
+- CNN
+
+#### Analysis
+
 In this study, the data provided by the Diagnostic Wisconsin Breast Cancer database is used to 
 analyze and run through four different predictive models. In order to accurately determine if 
 the predictive model could make predictions, multiple characteristics were evaluated to 
@@ -77,51 +125,5 @@ Results: The results from each model are shared below.
 
 <img width="460" height="300" src="/assets/images/BreastCancerResults.jpg">
   
-
-#### DataSets:
-
-Breast cancer testing has a process called Fine Needle Aspirate (FNA). This process uses breast mass collected using a hollow needle attached to a syringe to get a small amount of tissue. Which is used to run laboratory tests. The data is collected from these tests and made available for machine learning. This database is available through - 
-UCI Machine Learning Repository: https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+%28Diagnostic%29
-Kaggle - https://www.kaggle.com/uciml/breast-cancer-wisconsin-data.
-Attribute Information:
-
-1) ID number
-
-2) Diagnosis (M = malignant, B = benign)
-
-3 to 32) Ten real-valued features are computed for each cell nucleus:
-
-a) radius (mean of distances from center to points on the perimeter)
-
-b) texture (standard deviation of gray-scale values)
-
-c) perimeter
-
-d) area
-
-e) smoothness (local variation in radius lengths)
-
-f) compactness (perimeter^2 / area - 1.0)
-
-g) concavity (severity of concave portions of the contour)
-
-h) concave points (number of concave portions of the contour)
-
-i) symmetry
-
-j) fractal dimension ("coastline approximation" - 1)
-
-The dataset also provides the mean, standard error, and "worst" or largest (mean of the three largest values) of these features for each image, resulting in 30 features. 
-
-Dataset Can be found [here](https://www.kaggle.com/uciml/breast-cancer-wisconsin-data)
-
-
-#### Prerequisites/Installations:
-- Python 3
-- Pandas
-- Keras
-- TensorFlow
-- CNN
-
 
 GitHub repository can be found here: [GitHub]( https://github.com)  

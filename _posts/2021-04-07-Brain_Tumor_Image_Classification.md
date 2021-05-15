@@ -43,24 +43,28 @@ growing noncancerous tumors that cause seizures and visual problems. This type o
 tumors, and 53.3% of all non-malignant tumors.
 
 
-<img width="460" height="300" src="/assets/images/maningioma.png">
+<img width="200" height="300" src="/assets/images/maningioma.png">
 
 
 2. 826 Glioma images. Glioma is an abnormal growth in glial cells present around the neurons in the brain. Gliomas make 
 up 81% of malignant brain tumors in adults.
 
 
-<img width="460" height="300" src="/assets/images/glioma.png">
+<img width="200" height="300" src="/assets/images/glioma.png">
 
 
 3. 827 pituitary tumor images. Pituitary tumors grow in pituitary glands that affect body functions. Some pituitary 
 tumors result in too many of the hormones that regulate important functions of your body. Some pituitary tumors can 
 cause your pituitary gland to produce lower levels of hormones. 
 
+
+<img width="200" height="300" src="/assets/images/pitutary.png">
+
+
 4. 395 No tumor images. 
 
 
-<img width="460" height="300" src="/assets/images/no%20tumor.png">
+<img width="200" height="300" src="/assets/images/no%20tumor.png">
 
 
 Dataset Can be found [here](https://www.kaggle.com/sartajbhuvaji/brain-tumor-classification-mri)
@@ -86,7 +90,8 @@ As seen in the dataset we have 4 different classes. Hence using multiclass class
 1. Random transformation and normalization.
 2. Instantiate generators of augmented image batches
   
-``` ImageDataGenerator(
+``` 
+ImageDataGenerator(
         featurewise_center=False,  
         samplewise_center=False, 
         featurewise_std_normalization=False,  

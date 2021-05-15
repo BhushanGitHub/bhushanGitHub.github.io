@@ -4,6 +4,9 @@ layout: page
 ---
 ![Profile Image]({% if site.external-image %}{{ site.picture }}{% else %}{{ site.url }}/{{ site.picture }}{% endif %})
 
+<h5><a href="mailto:bhushanfordatascience@gmail.com">Email Me!</a></h5>
+
+
 <p align="justify">Hello, my name is Bhushan, and I recently completed my Master of Science in Data Science from Bellevue University.
 
 An agilest with 14years of industry experience.
@@ -77,4 +80,29 @@ dd {
 	<li>Devoted Continuous Learning</li>
 </ul>
 
-<h2><a href="mailto:bhushanfordatascience@gmail.com">Email Me!</a></h2>
+<h2>Job Details</h2>
+
+<h3>Zillow Group, USA</h3>
+
+<ul>
+	<li>Role: Data Engineer</li>
+	<li>Duration:  Nov 2019 – Till date</li>
+	<li>Environment: Java 1.8 Spring framework, Mybatis, Amazon Web Services, AWS Lambda, AWS Elastic Container Services, Python, Web Services, REST, Postman, JBOSS, SonarQube, Maven, Jenkins, Eclipse, Kibana, Hadoop, Elastic Search, Hue,  AppDynamics, Tomcat 8, Angular 6.0, Node Js, Selenium, Git, Liquibase, Oracle DataBase.</li>
+</ul>
+
+<h4>Responsibilities</h4>
+
+<u1>
+    <li>Analyze complex user requirements, procedures, and problems to improve existing System design.</li>
+    <li>Design, develop, configure, program and implement software applications, packages and components customized to meet specific needs and requirements.</li>
+    <li>Implemented DAO layer to interact NoSql database interactions using Mybatis.</li>
+    <li>Participate in Daily stand up meetings, Sprint Planning.</li>
+    <li>Develop end-to-end application components involving business layer, persistence layer, and database and web services layer.</li>
+    <li>Deployed applications using Jenkins & AWS Code deploy for Continuous Integration / Continuous deployment.</li>
+    <li>Used  JSON  contracts for  GUI and service communications.</li>
+    <li>Integrated Jenkins with SVN/Git Repository for Continuous Integration.</li>
+    <li>Worked on SonarQube, CloverReport, SpotBugs for code quality and code smells.</li> 
+    <li>Involved in code review, unit testing and bug fixing.</li>
+    <li>Written Database queries for insertion, updates, joins etc.</li> 
+</u1>
+

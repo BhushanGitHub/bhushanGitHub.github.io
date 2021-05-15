@@ -20,7 +20,6 @@ externalLink: false
   <img width="460" height="300" src="/assets/images/brain_tumor.jpg">
 </p>
 
-
 ## Brain Tumor Image Classification
 <p align='justify'>
 
@@ -31,6 +30,8 @@ from the human body. Heart diseases, Cancer, Brain tumor, Blood clotting, these 
 found by medical imaging techniques. We can use different machine learning techniques to classify different types of brain 
 tumors by using MRI. The Convolutional Neural Network (CNN) is a class of deep learning neural networks that are highly 
 effective with image classifications.  
+  <img width="460" height="300" src="/assets/images/brain_tumor.jpg">
+
 
 </p>  
 

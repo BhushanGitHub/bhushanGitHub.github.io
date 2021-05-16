@@ -38,7 +38,7 @@ effective with image classifications.
 The brain tumor dataset contains 2870 training images. The dataset includes the three kinds of tumor images. 
 The three tumors have the following distribution of data. -
     
-1. 822 Meningioma images. The meningioma type of tumors seen near the top-outer part of the brain. Meningioma is slowly 
+- 822 Meningioma images. The meningioma type of tumors seen near the top-outer part of the brain. Meningioma is slowly 
 growing noncancerous tumors that cause seizures and visual problems. This type of tumors accounting for 37.6% of all 
 tumors, and 53.3% of all non-malignant tumors.
 
@@ -46,14 +46,14 @@ tumors, and 53.3% of all non-malignant tumors.
 <img width="200" height="300" src="/assets/images/maningioma.png">
 
 
-2. 826 Glioma images. Glioma is an abnormal growth in glial cells present around the neurons in the brain. Gliomas make 
+- 826 Glioma images. Glioma is an abnormal growth in glial cells present around the neurons in the brain. Gliomas make 
 up 81% of malignant brain tumors in adults.
 
 
 <img width="200" height="300" src="/assets/images/glioma.png">
 
 
-3. 827 pituitary tumor images. Pituitary tumors grow in pituitary glands that affect body functions. Some pituitary 
+- 827 pituitary tumor images. Pituitary tumors grow in pituitary glands that affect body functions. Some pituitary 
 tumors result in too many of the hormones that regulate important functions of your body. Some pituitary tumors can 
 cause your pituitary gland to produce lower levels of hormones. 
 
@@ -61,7 +61,7 @@ cause your pituitary gland to produce lower levels of hormones.
 <img width="200" height="300" src="/assets/images/pitutary.png">
 
 
-4. 395 No tumor images. 
+- 395 No tumor images. 
 
 
 <img width="200" height="300" src="/assets/images/no%20tumor.png">

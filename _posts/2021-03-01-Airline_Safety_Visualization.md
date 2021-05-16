@@ -43,6 +43,15 @@ Matplotlib
 Tableau
 
 
+#### Inforgraphics 
+
+
+<img width="460" height="300" src="/assets/images/AirlineSafety1.jpg">
+
+<img width="460" height="300" src="/assets/images/AirlineSafety2.jpg">
+
+<img width="460" height="300" src="/assets/images/AirlineSafety3.jpg">
+
 
 
 GitHub repository can be found here: [GitHub]( https://github.com)  

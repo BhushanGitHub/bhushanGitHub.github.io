@@ -27,7 +27,7 @@ that the US will add 281,550 cases of breast cancer in women. If it can be detec
 early, studies show that these statistics can be improved. The purpose of this project was to 
 determine if machines can accurately assist doctors, particularly breast cancer specialists, in 
 making an accurate predictive diagnosis relating to breast cancer. 
-
+</p>
 
 #### DataSets:
 
@@ -39,31 +39,22 @@ Kaggle - https://www.kaggle.com/uciml/breast-cancer-wisconsin-data.
 
 Attribute Information:
 
-1) ID number
+1. ID number
 
-2) Diagnosis (M = malignant, B = benign)
+2. Diagnosis (M = malignant, B = benign)
 
-3 to 32) Ten real-valued features are computed for each cell nucleus:
+3. 3 to 32) Ten real-valued features are computed for each cell nucleus:
 
-a) radius (mean of distances from center to points on the perimeter)
-
-b) texture (standard deviation of gray-scale values)
-
-c) perimeter
-
-d) area
-
-e) smoothness (local variation in radius lengths)
-
-f) compactness (perimeter^2 / area - 1.0)
-
-g) concavity (severity of concave portions of the contour)
-
-h) concave points (number of concave portions of the contour)
-
-i) symmetry
-
-j) fractal dimension ("coastline approximation" - 1)
+    - radius (mean of distances from center to points on the perimeter)
+    - texture (standard deviation of gray-scale values)
+    - perimeter
+    - area
+    - smoothness (local variation in radius lengths)
+    - compactness (perimeter^2 / area - 1.0)
+    - concavity (severity of concave portions of the contour)
+    - concave points (number of concave portions of the contour)
+    - symmetry
+    - fractal dimension ("coastline approximation" - 1)
 
 The dataset also provides the mean, standard error, and "worst" or largest (mean of the three largest values) of these features for each image, resulting in 30 features. 
 
@@ -91,7 +82,6 @@ breast cancer diagnosis.
 Exploring the data has led to some basic and interesting discoveries. The data consists of 569 records, with 212 as 
 malignant and 357 diagnosed as benign, 37.26% and 62.74% respectively.  
 
-</p>
 
 
 <img width="460" height="300" src="/assets/images/Bar%20Graph.jpg">

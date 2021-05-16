@@ -31,11 +31,13 @@ making an accurate predictive diagnosis relating to breast cancer.
 
 #### DataSets:
 
+<p align='justify'>
 Breast cancer testing has a process called Fine Needle Aspirate (FNA). This process uses breast mass collected using a hollow needle attached to a syringe to get a small amount of tissue. Which is used to run laboratory tests. The data is collected from these tests and made available for machine learning. This database is available through - 
+</p>
 
-UCI Machine Learning Repository: https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+%28Diagnostic%29
+[UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+%28Diagnostic%29)
 
-Kaggle - https://www.kaggle.com/uciml/breast-cancer-wisconsin-data.
+[Kaggle - Breast Cancer Dataset](https://www.kaggle.com/uciml/breast-cancer-wisconsin-data)
 
 Attribute Information:
 
@@ -56,8 +58,9 @@ Attribute Information:
     - symmetry
     - fractal dimension ("coastline approximation" - 1)
 
+<p align='justify'>
 The dataset also provides the mean, standard error, and "worst" or largest (mean of the three largest values) of these features for each image, resulting in 30 features. 
-
+</p>
 
 #### Prerequisites/Installations:
 - Python 3
@@ -68,6 +71,7 @@ The dataset also provides the mean, standard error, and "worst" or largest (mean
 
 #### Analysis
 
+<p align='justify'>
 In this study, the data provided by the Diagnostic Wisconsin Breast Cancer database is used to 
 analyze and run through four different predictive models. In order to accurately determine if 
 the predictive model could make predictions, multiple characteristics were evaluated to 
@@ -81,7 +85,7 @@ breast cancer diagnosis.
 
 Exploring the data has led to some basic and interesting discoveries. The data consists of 569 records, with 212 as 
 malignant and 357 diagnosed as benign, 37.26% and 62.74% respectively.  
-
+</p>
 
 
 <img width="460" height="300" src="/assets/images/Bar%20Graph.jpg">

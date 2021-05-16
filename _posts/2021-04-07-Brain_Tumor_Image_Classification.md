@@ -35,13 +35,14 @@ effective with image classifications.
 
 #### DataSets:
 
+<p align='justify'>
 The brain tumor dataset contains 2870 training images. The dataset includes the three kinds of tumor images. 
 The three tumors have the following distribution of data. -
     
 - 822 Meningioma images. The meningioma type of tumors seen near the top-outer part of the brain. Meningioma is slowly 
 growing noncancerous tumors that cause seizures and visual problems. This type of tumors accounting for 37.6% of all 
 tumors, and 53.3% of all non-malignant tumors.
-
+</p>
 
 <img width="200" height="300" src="/assets/images/maningioma.png">
 

@@ -106,3 +106,28 @@ dd {
     <li>Written Database queries for insertion, updates, joins etc.</li> 
 </u1>
 
+
+<h3>Union Pacific Rail Road, USA</h3>
+
+<ul>
+	<li>Role: Software Engineer</li>
+	<li>Duration:  Mar 2014 – Nov 2019</li>
+	<li>Environment: Java 1.8 Spring framework, Web Services, REST, Postman, JBOSS, SonarQube, Maven, Jenkins, Eclipse, Kibana, Hadoop, Elastic Search, Hue,  AppDynamics, Tomcat 8, Angular 6.0, Node Js, Selenium, Git, Liquibase, Oracle DataBase.</li>
+</ul>
+
+<h4>Responsibilities</h4>
+
+<u1>
+    <li>Analyze complex user requirements, procedures, and problems to improve existing System design.</li>
+    <li>Developed real time visualization dashboards to depict train positions, signal status by fetching data from Rest services, Elastic search, caching and big data store.</li>
+    <li>Design, develop, configure, program and implement software applications, packages and components customized to meet specific needs and requirements.</li>
+    <li>Employed Spring batch and CA workload automation scheduler to create the historical dashboards. </li>
+    <li>Implemented DAO layer to interact NoSql database interactions like ElasticSearch.</li>
+    <li>Participate in Daily stand up meetings, Sprint Planning.</li>
+    <li>Worked on BigData technology such as hive for query based analytics. </li>
+    <li>Develop end-to-end application components involving business layer, persistence layer, and database and web services layer using Spring MVC.</li>
+    <li>Deployed applications using Jenkins Continuous Integration deployment plan.</li> 
+    <li>Develop the web application using Spring, JSP, HTML, Cascading Style Sheets (CSS) and JavaScript and implemented the application using J2EE design patterns like Spring, Singleton, DAO (Data Access Object), DTO (Data Transfer Object).</li>
+    <li>Integrated Jenkins with SVN/Git Repository for Continuous Integration.</li>
+</u1>
+

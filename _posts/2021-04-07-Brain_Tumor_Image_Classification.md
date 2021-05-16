@@ -38,11 +38,13 @@ effective with image classifications.
 <p align='justify'>
 The brain tumor dataset contains 2870 training images. The dataset includes the three kinds of tumor images. 
 The three tumors have the following distribution of data. -
+</p>
+
     
 - 822 Meningioma images. The meningioma type of tumors seen near the top-outer part of the brain. Meningioma is slowly 
 growing noncancerous tumors that cause seizures and visual problems. This type of tumors accounting for 37.6% of all 
 tumors, and 53.3% of all non-malignant tumors.
-</p>
+
 
 <img width="200" height="300" src="/assets/images/maningioma.png">
 
@@ -68,7 +70,7 @@ cause your pituitary gland to produce lower levels of hormones.
 <img width="200" height="300" src="/assets/images/no%20tumor.png">
 
 
-Dataset Can be found [here](https://www.kaggle.com/sartajbhuvaji/brain-tumor-classification-mri)
+[Kaggle Brain Tumor Dataset](https://www.kaggle.com/sartajbhuvaji/brain-tumor-classification-mri)
 
 
 #### Prerequisites/Installations:
@@ -107,5 +109,9 @@ ImageDataGenerator(
 ```
 
 In our case, we will use a very small CNN with few layers and few filters per layer, alongside augmentation and dropout. Dropout helps reduce overfitting, by preventing a layer from seeing twice the same pattern, thus acting in a way analogous to data augmentation. This approach gave us a validation accuracy of around 73%. The model uses 20 epochs with a batch size of 20. 
+
+
+<img width="460" height="300" src="/assets/images/brainTumor_Accuracy.png">
+
 
 GitHub repository can be found here: [GitHub]( https://github.com)  

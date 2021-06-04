@@ -1,0 +1,301 @@
+---
+output:
+  word_document: default
+  pdf_document: default
+  html_document: default
+---
+
+```yaml
+---
+title: "Final Project - Suicide rate Analysis."
+author: "Bhushan Suryawanshi"
+date: '2020-08-05'
+
+---
+```
+
+
+```{r, warning=FALSE, message=FALSE}
+library("ggplot2")
+library("dplyr")
+library("doBy")
+library("countrycode") 
+
+```
+
+
+
+```{r, warning=FALSE, message=FALSE}
+
+suicide_ny_df <- read.csv("suicide-data-ny.csv", header= TRUE, sep= ",", stringsAsFactors = FALSE)
+
+head(suicide_ny_df)
+summary(suicide_ny_df)
+str(suicide_ny_df)
+
+
+
+```
+
+
+```{r, warning=FALSE, message=FALSE}
+
+suicide_who_df <- read.csv("who_suicide_statistics.csv", header= TRUE, sep= ",", stringsAsFactors = FALSE)
+
+head(suicide_who_df)
+summary(suicide_who_df)
+str(suicide_who_df)
+
+```
+
+```{r, warning=FALSE, message=FALSE}
+
+suicide_df <- read.csv("final_suicide_data.csv", header= TRUE, sep= ",", stringsAsFactors = FALSE)
+
+head(suicide_df)
+summary(suicide_df)
+str(suicide_df)
+
+
+```
+
+
+- I managed to search and get different datasets online for suicide data. Those data set include -  The data set received from health data had data related to only New York state.  Also this dataset does not have GDP data to know the economic impact. However, the questions I selected was more broader to address country level statistics and comparison between different geo locations across the globe. The other data set received from Kaggle (WHO statistic) was giving me required details of country level statistics for about 100 different countries. However that did not have the GDP data. The third dataset used for the suicide analysis was a large dataset same as WHO dataset with GDP data and hence used it as my final dataset for analysis. 
+
+- Checking and cleaning dataset was another step which was required as the data received has HDI column with missing data. As for the current analysis it was not required and hence dropped that column. There was additional column added as “suicide rate” which was not present earlier. I also required to split large dataset to create country specific datasets so that those can be used for comparison. Boxplot and histogram shows the data distribution. 
+
+
+#### Data Cleaning
+
+```{r, warning=FALSE, message=FALSE}
+
+# Checking duplicate - if one row is identical to another
+distinctdata <- distinct(suicide_df)
+nrow(suicide_df) == nrow(distinctdata)
+
+```
+
+
+```{r, warning=FALSE, message=FALSE}
+
+suicide_sorted_df <- suicide_df %>% select(-(HDI.for.year), -(country.year), 
+                                           -(gdp_for_year....)) %>% 
+  rename(country = ï..country, gdp_per_cap = gdp_per_capita....) %>% 
+  filter(year < c(2016))
+
+
+suicide_sorted_df <- suicide_sorted_df %>% 
+mutate(suicideRate = (suicides_no/population)*100)
+
+
+#gdp_per_capita - create a log transformed column
+suicide_sorted_df<- suicide_sorted_df %>% mutate(gdp_per_cap_log = log10(suicide_sorted_df$gdp_per_cap))
+
+suicide_sorted_df$age <- as.factor(suicide_sorted_df$age)
+
+suicide_sorted_df$continent <- countrycode(sourcevar = suicide_sorted_df[, "country"],
+                              origin = "country.name",
+                              destination = "continent")
+
+
+data_nominal <- c('country', 'sex', 'continent')
+suicide_sorted_df[data_nominal] <- lapply(suicide_sorted_df[data_nominal], 
+                                          function(x){factor(x)})
+
+suicide_sorted_df$age <- gsub(" years", "", suicide_sorted_df$age)
+
+
+suicide_sorted_df$age <- factor(suicide_sorted_df$age, 
+                   ordered = T, levels = c("5-14", "15-24", "25-34", "35-54", 
+                                           "55-74", "75+"))
+
+suicide_sorted_df$generation <- factor(suicide_sorted_df$generation, 
+                   ordered = T, 
+                   levels = c("G.I. Generation", "Silent", "Boomers", 
+                              "Generation X", "Millenials", "Generation Z"))
+
+global_average <- (sum(as.numeric(suicide_sorted_df$suicides_no)) / 
+                     sum(as.numeric(suicide_sorted_df$population))) * 100000
+
+summary(suicide_sorted_df)
+
+str(suicide_sorted_df)
+
+head(suicide_sorted_df)
+
+
+ggplot(suicide_sorted_df, aes(gdp_per_cap)) + geom_bar()
+```
+
+
+#### Suicide Rate over time
+
+
+```{r, warning=FALSE, message=FALSE}
+
+
+suicide_sorted_df %>%
+  group_by(year) %>%
+  summarize(population = sum(population), 
+            suicides = sum(suicides_no), 
+            suicides_per_100k = (suicides / population) * 100000) %>%
+  ggplot(aes(x = year, y = suicides_per_100k)) + 
+  geom_line(col = "deepskyblue3", size = 1) + 
+  geom_point(col = "deepskyblue3", size = 2) + 
+  geom_hline(yintercept = global_average, linetype = 2, size = 1) +
+  labs(title = "Suicide rate over Years",
+       x = "Year", 
+       y = "Suicides per 100k") + 
+  scale_x_continuous(breaks = seq(1985, 2015, 2)) + 
+  scale_y_continuous(breaks = seq(10, 20))
+
+
+```
+
+- Average suicide rate for available data from 1985 to 2015 shows 13.5 per 100k of population.
+- Highest rate of suicide was observed in 1995.
+- This answers our question " Is Suicide rate affected recently (decreasing/increasing)?". Yes suicide rate decreased since 1995. 
+  If we compare suicide rate in 1995 and 2015 there is approximately 25% decrease. 
+
+
+  
+  
+#### Lets look at sucide rate per 100k population for top 40 countries
+
+```{r, warning=FALSE, message=FALSE}
+
+
+
+country <- suicide_sorted_df %>%
+  group_by(country, continent) %>%
+  summarize(n = n(), 
+            suicide_per_100k = (sum(as.numeric(suicides_no)) / sum(as.numeric(population))) * 100000) %>%
+  arrange(desc(suicide_per_100k)) 
+
+country$country <- factor(country$country, 
+                          ordered = T, 
+                          levels = rev(country$country))
+
+country1 <- country[1:40,]
+
+ggplot(country1, aes(x = country, y = suicide_per_100k, fill = continent)) + 
+  geom_bar(stat = "identity") + 
+  geom_hline(yintercept = global_average, linetype = 2, color = "grey35", size = 1) +
+  labs(title = "Suicide rate by Country",
+       x = "Country", 
+       y = "Suicides per 100k", 
+       fill = "Continent") +
+  coord_flip() +
+  scale_y_continuous(breaks = seq(0, 45, 2)) + 
+  theme(legend.position = "bottom")
+
+```
+
+
+#### Suicide rate by GDP
+
+
+
+```{r, warning=FALSE, message=FALSE}
+country_year_gdp <- suicide_sorted_df %>%
+  group_by(country, year) %>%
+  summarize(gdp_per_cap = mean(gdp_per_cap))
+
+country_year_gdp_corr <- country_year_gdp %>%
+  ungroup() %>%
+  group_by(country) %>%
+  summarize(year_gdp_correlation = cor(year, gdp_per_cap))
+
+
+summary(country_year_gdp_corr)
+
+country_mean_gdp <- suicide_sorted_df %>%
+  group_by(country, continent) %>%
+  summarize(suicide_per_100k = (sum(as.numeric(suicides_no)) / sum(as.numeric(population))) * 100000, 
+            gdp_per_capita = mean(gdp_per_cap))
+
+summary( lm(suicide_per_100k ~ gdp_per_capita, data = country_mean_gdp))
+
+summary(suicide_sorted_df$suicideRate)
+
+summary(suicide_sorted_df$gdp_per_cap_log)
+
+summary(lm(suicide_sorted_df$suicideRate~suicide_sorted_df$gdp_per_cap_log,data=suicide_sorted_df))
+
+cor.test(suicide_sorted_df$suicideRate, suicide_sorted_df$gdp_per_cap_log, method = "pearson")
+
+```
+
+- The mean correlation was 0.878, indicates that there is strong positive linear relationship between GDP and number of suicides.
+- This shows increase in wealth per person also affect suicide rate positively. 
+- The regression model shows p-value of 0.0057 which means there is little variance in suicide rate because of GDP.
+- This means there is positive relation but is a weak relationship. 
+- However earlier graph of suicide rate over time shows that the suicide rates are decreasing over time. 
+- Hence more answers can be found by analyzing each country separately. 
+
+
+#### Suicide rate by age
+
+```{r, warning=FALSE, message=FALSE}
+
+suicide_sorted_df %>%
+  group_by(generation, age, year) %>%
+  summarize(suicide_per_100k = (sum(as.numeric(suicides_no)) / sum(as.numeric(population))) * 100000) %>%
+  ggplot(aes(x = year, y = suicide_per_100k, col = factor(generation, ordered = F))) + 
+  geom_point() + 
+  geom_line() + 
+  facet_grid(age ~ ., scales = "free_y") + 
+  scale_x_continuous(breaks = seq(1985, 2015, 5), minor_breaks = NULL) +
+  labs(title = "Suicide rate for generations, Age & Year", 
+       x = "Year", 
+       y = "Suicides per 100k", 
+       col = "Generation") + 
+  theme(legend.position = "bottom")
+
+by(suicide_sorted_df$suicides_no, suicide_sorted_df$age, mean)
+
+```
+
+- The above number shows that age group 5-14 has lowest number of suicides. 
+- Age group 35-54 has highest number of suicides globally. 
+
+```{r, warning=FALSE, message=FALSE}
+
+by(suicide_sorted_df$suicides_no, suicide_sorted_df$age, length)
+
+anova <- aov(suicides_no ~ age, data= suicide_sorted_df)
+summary(anova)
+
+```
+
+- The p-value shown above is < 0.05. Hence we can say that there is significant difference in suicide rate across age group. 
+
+
+#### Comparing suicide rates between USA and UK as they are similar economies
+
+```{r, warning=FALSE, message=FALSE}
+
+suicide_us_uk_df <- suicide_sorted_df %>%
+  filter(country %in% c("United Kingdom", 
+                        "United States")) 
+
+summary(suicide_us_uk_df)
+
+suicide_us_uk_df %>%
+  group_by(country, year) %>%
+  summarize(suicide_per_100k = (sum(as.numeric(suicides_no)) / sum(as.numeric(population))) * 100000) %>%
+  ggplot(aes(x = year, y = suicide_per_100k, col = country)) + 
+  geom_point(alpha = 0.5) + 
+  geom_smooth(se = F, span = 0.2) + 
+  scale_x_continuous(breaks = seq(1985, 2015, 5), minor_breaks = F) + 
+  labs(title = "Sucide rate comparison between US and UK", 
+       x = "Year", 
+       y = "Suicides per 100k", 
+       col = "Country")
+```
+
+- UK rates shows lower and also decreased consistently over the years.
+- US rate of suicide is quite volatile and shows decrease between 1995 to 2000.
+  However there is equally sharp increase between 2000 to 2015. 
+  
+

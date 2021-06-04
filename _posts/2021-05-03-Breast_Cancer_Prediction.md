@@ -121,4 +121,4 @@ Results: The results from each model are shared below.
 <img width="460" height="300" src="/assets/images/BreastCancerResults.jpg">
   
 
-GitHub repository can be found here: [GitHub]( https://github.com)  
+GitHub repository can be found here: [GitHub](https://github.com/BhushanGitHub/bhushanGitHub.github.io/tree/main/Projects/breast_cancer_prediction)  

@@ -64,4 +64,4 @@ Convergence Divergence (MACD), Pivot points, volume-weighted moving average.
 - SQLite
 
 
-GitHub repository can be found here: [GitHub]( https://github.com)  
+GitHub repository can be found here: [GitHub](https://github.com/BhushanGitHub/bhushanGitHub.github.io/tree/main/Projects/stock_price_analysis) 

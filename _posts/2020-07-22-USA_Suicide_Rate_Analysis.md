@@ -74,4 +74,4 @@ sex, and age group. For more information, check out: http://www.health.ny.gov/st
 4. car, QuantPsyc
 
 
-GitHub repository can be found here: [GitHub]( https://github.com)
+GitHub repository can be found here: [GitHub](https://github.com/BhushanGitHub/bhushanGitHub.github.io/tree/main/Projects/suicide_rate_analysis)

@@ -60,4 +60,4 @@ The other features in the data set are -
 - Keras
 
 
-GitHub repository can be found here: [GitHub](https://github.com/BhushanGitHub/bhushanGitHub.github.io)  
+GitHub repository can be found here: [GitHub](https://github.com/BhushanGitHub/bhushanGitHub.github.io/tree/main/Projects/wine_quality_prediction)  

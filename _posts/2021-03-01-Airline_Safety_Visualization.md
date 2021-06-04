@@ -58,4 +58,4 @@ Our team looked at the data from different sources to come up with answers to ai
 
 
 
-GitHub repository can be found here: [GitHub]( https://github.com)  
+GitHub repository can be found here: [GitHub](https://github.com/BhushanGitHub/bhushanGitHub.github.io/tree/main/Projects/airline_safety)  

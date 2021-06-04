@@ -60,4 +60,4 @@ This means Ejection fraction has an impact on heart failure. Hence we reject nul
 - Numpy
 
 
-GitHub repository can be found here: [GitHub]( https://github.com)  
+GitHub repository can be found here: [GitHub](https://github.com/BhushanGitHub/bhushanGitHub.github.io/tree/main/Projects/heart_failure)

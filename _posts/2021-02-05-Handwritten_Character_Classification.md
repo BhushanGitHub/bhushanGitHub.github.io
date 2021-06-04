@@ -63,4 +63,4 @@ The dataset is split into training set(85%) and testing set(15%).
 - Anaconda
 
 
-GitHub repository can be found here: [GitHub]( https://github.com)  
+GitHub repository can be found here: [GitHub](https://github.com/BhushanGitHub/bhushanGitHub.github.io/tree/main/Projects/handwritten_character_classification)  

@@ -114,4 +114,4 @@ In our case, we will use a very small CNN with few layers and few filters per la
 <img width="460" height="300" src="/assets/images/brainTumor_Accuracy.png">
 
 
-GitHub repository can be found here: [GitHub]( https://github.com)  
+GitHub repository can be found here: [GitHub](https://github.com/BhushanGitHub/bhushanGitHub.github.io/tree/main/Projects/brain_tumor_classification)  

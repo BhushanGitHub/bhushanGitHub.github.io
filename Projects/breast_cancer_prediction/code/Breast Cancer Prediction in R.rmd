@@ -1,0 +1,95 @@
+---
+title: "Breast Cancer Prediction"
+author: "Bhushan Suryawanshi"
+date: "04/29/2021"
+output:
+  html_document:
+    df_print: paged
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+# load libraries that may be needed
+library(readr)
+library(dplyr)
+library(car)
+library(caTools)
+library(lmtest)
+#library(skimr)
+library(corpcor)
+library(caret)
+library(e1071)
+library(class)
+library(knitr)
+library(randomForest)
+```
+### Data
+```{r}
+# load csv file data_for_r.csv
+data <- read.csv('r_dataset.csv')
+
+# convert diagnosis to factor
+data$diagnosis <- as.factor(data$diagnosis)
+
+# inspect data
+head(data)
+str(data)
+```
+### Splitting the Data
+```{r}
+# split the data, set up train and test subsets (80/20 split)
+training_indices <- sample(1:nrow(data), round(nrow(data)*0.80))
+train <- data[training_indices, ]
+test <- data[-training_indices, ]
+```
+### Random Forest
+```{r}
+# set random seed
+set.seed(40)
+
+# Run the model 
+rf_default <- train(diagnosis ~ ., data = train, method = "rf", metric = "Accuracy",
+     trainControl = trainControl(method = "repeatedcv", number = 100, repeats = 10))
+
+# Print the results
+print(rf_default)
+# 
+# test prediction 
+rf_pred <- predict(rf_default, newdata = test)
+rf_pred
+confusionMatrix(table(rf_pred, test$diagnosis))
+```
+### SVM
+```{r}
+# set random seed
+set.seed(40)
+
+# set train control 
+trctrl <- trainControl(method = "repeatedcv", number = 10, repeats = 3)
+
+# build model
+data.svm <- svm(diagnosis ~ ., data = train, kernel = "linear", cost = 10, scale = FALSE, 
+                trControl=trctrl, preProcess = c("center", "scale"), tuneLength = 10)
+data.svm
+
+# make prediction
+test_pred <- predict(data.svm, newdata = test)
+test_pred
+
+confusionMatrix(table(test_pred, test$diagnosis))
+```
+### K Nearest Neighbor
+```{r}
+# set random seed
+set.seed(40)
+
+# Feature Scaling 
+train_scale <- scale(train[, 2:12]) 
+test_scale <- scale(test[, 2:12]) 
+
+# Fitting KNN Model 
+mod_knn <- knn(train = train_scale, test = test_scale, 
+               cl = train$diagnosis, k = 3)
+
+# Confusion Matrix 
+confusionMatrix(table(test$diagnosis, mod_knn))
+```

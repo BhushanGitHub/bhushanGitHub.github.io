@@ -1,5 +1,5 @@
 ---
-title: ":airplane: Airline Safety Visualization"
+title: "Airline Safety Visualization"
 layout: post
 tag: 
 - Data Preperation 

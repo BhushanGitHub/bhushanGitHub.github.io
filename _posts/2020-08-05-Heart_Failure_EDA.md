@@ -1,5 +1,5 @@
 ---
-title: ":broken_heart: Heart Failure EDA"
+title: "Heart Failure EDA"
 layout: post
 tag: 
 - Data Analysis 

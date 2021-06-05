@@ -1,5 +1,5 @@
 ---
-title: ":cloud: Weather Data App"
+title: "Weather Data App"
 layout: post
 tag: 
 - Data API 

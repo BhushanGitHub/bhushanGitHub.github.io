@@ -1,5 +1,5 @@
 ---
-title: ":chart_with_upwards_trend: Stock Price Analysis"
+title: "Stock Price Analysis"
 layout: post
 tag: 
 - Data Analysis 

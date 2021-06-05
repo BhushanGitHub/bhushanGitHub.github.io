@@ -11,6 +11,7 @@ headerImage: true
 projects: true
 hidden: true # don't count this post in blog pagination
 description: " "
+image = "/assets/images/heart_failure.jpg"
 category: projects
 author: Bhushan Suryawanshi 
 externalLink: false

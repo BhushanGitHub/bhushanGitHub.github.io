@@ -10,6 +10,7 @@ headerImage: true
 projects: true
 hidden: true # don't count this post in blog pagination
 description: " "
+image: "/assets/images/breastCancerTitle.png"
 category: projects
 author: Bhushan Suryawanshi 
 externalLink: false

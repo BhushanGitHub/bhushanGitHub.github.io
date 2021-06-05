@@ -9,7 +9,8 @@ title: Projects
             <div class="item {% if post.star %}star{% endif %}">
                 <a class="url" href="{% if post.externalLink %}{{ post.externalLink }}{% else %}{{ site.url }}{{ post.url }}{% endif %}">
                     <h3 class="title">{{ post.title }}</h3>
-                </a>{{ post.image }}
+                    <img width="460" height="300" src= {{ post.image }} >
+                </a>{{ post.description }}
             </div>
         {% endif %}
     {% endfor %}

@@ -17,9 +17,7 @@ author: Bhushan Suryawanshi
 externalLink: false
 ---
 
-<p align="center">
-  <img width="460" height="300" src="/assets/images/brain_tumor.jpg">
-</p>
+
 
 ## Brain Tumor Image Classification
 <p align='justify'>

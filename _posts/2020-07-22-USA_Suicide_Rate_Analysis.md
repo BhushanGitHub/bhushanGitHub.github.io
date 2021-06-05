@@ -17,9 +17,7 @@ author: Bhushan Suryawanshi
 externalLink: false
 ---
 
-<p align="center">
-  <img width="460" height="300" src="/assets/images/suicide.png">
-</p>
+
 
 ## USA Suicide Rate Analysis
 <p align="justify">

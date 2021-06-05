@@ -17,10 +17,6 @@ externalLink: false
 ---
 
 
-<p align="center">
-  <img width="460" height="300" src="/assets/images/amazon_prod_review.png">
-</p>
-
 
 ## Amazon Product Review Rating Insights
 <p align='justify'>

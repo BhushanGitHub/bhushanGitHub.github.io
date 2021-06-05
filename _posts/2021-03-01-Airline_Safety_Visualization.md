@@ -17,9 +17,6 @@ author: Bhushan Suryawanshi
 externalLink: false
 ---
 
-<p align="center">
-  <img width="460" height="300" src="/assets/images/aviation_safety.jpg">
-</p>
 
 
 ## Airline Safety Visualization 
